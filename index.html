@@ -15,7 +15,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-image: url("https://raw.githubusercontent.com/gsanabriam/gsanabriam.github.io/master/Img/img2.png");
-  min-height: 75%;
+  min-height: 45%;
 }
 
 .menu {
@@ -51,7 +51,13 @@ body, html {
     <span class="w3-text-white" style="font-size:90px">Maestría Análisis de datos: Visualización</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white"><input type="datetime" name="fecha"  value="<?php echo date("Y-m-d\TH-i");?>"></span>
+    <span class="w3-text-white">
+      <script>
+        var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+        var f=new Date();
+        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+</script>
+    </span>
   </div>
 </header>
 
